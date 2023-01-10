@@ -100,15 +100,16 @@ a img{
 
 .work-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 020px;
     padding: 100px;
 }
 
 .horiseon{
-    width: 500px;
-    height: 250px;
+    width: 462px;
+    height: 160px;
     border: 5px solid black;
     border-radius: 55px 55px 55px 55px;
 }
@@ -116,6 +117,10 @@ a img{
 .bow-tie{
     border: 5px solid black;
     border-radius: 55px 55px 55px 55px;
+}
+
+.work-container :nth-child(2){
+    order: 2;
 }
 
 .cmg-soon{
@@ -134,7 +139,33 @@ a img{
     color: #61686b;
 }
 
+.contact-me-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
 
+.git-photo{
+    border-radius: 300px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.phone{
+    font-weight: bold;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.email{
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 40px;
+    font-size: 30px;
+}
 
 #page-color{
     background-color: #e3edf0;
@@ -155,3 +186,14 @@ hr{
         align-items: center;
     }
 } 
+
+
+@media (max-width: 1000px) {
+    .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
